@@ -1,0 +1,24 @@
+# Blender MTL File: 'carro high4.blend'
+# Material Count: 2
+
+newmtl Material
+Ns 548.946294
+Ka 0.036364 0.036364 0.036364
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\arquivos Brunimattions\\tcc\\carrim\\rosto padrão.png
+
+newmtl Material.001
+Ns 548.946294
+Ka 0.036364 0.036364 0.036364
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\arquivos Brunimattions\\tcc\\carrim\\rosto padrão.png
