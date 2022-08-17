@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class carro : MonoBehaviour
 {
@@ -16,6 +17,12 @@ public class carro : MonoBehaviour
     private float anguloAtual = 0f;
 
     public GameObject ferramenta;
+    public string Cena;
+    
+    private void Start()
+    {
+        Cena = SceneManager.GetActiveScene().name;
+    }
 
     private void Update()
     {
@@ -52,6 +59,11 @@ public class carro : MonoBehaviour
         anguloAtual = anguloMaximoParaVirar * Input.GetAxis("Horizontal");
         direita.steerAngle = anguloAtual;
         esquerda.steerAngle = anguloAtual;
+
+        if (Input.GetKey(KeyCode.Mouse1))
+        {
+            SceneManager.LoadScene(Cena);
+        }
     }
     public void Morte()
     {

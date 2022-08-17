@@ -8,6 +8,7 @@ TagManager:
   - ferramenta
   - cano
   - carroNovo
+  - chao
   layers:
   - Default
   - TransparentFX

@@ -92,10 +92,10 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6789169725282384316}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.7
+  m_Height: 2.49
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3361059253641471440
@@ -110,6 +110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cfde0c715d0fed419a850821150ad78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Batata: {fileID: 6789169725282384316}
+  mudaBatata: {fileID: 827135403462356641, guid: 718bee39a8af31949b650adcf6616a3c, type: 3}
 --- !u!54 &7289738002433808297
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class potato : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] GameObject Batata;
+    [SerializeField] GameObject mudaBatata;
+    Transform posicaoBatata;
+
+        void Start()
     {
-        
+        posicaoBatata = Batata.transform;
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
-        
+        if(other.gameObject.tag == "chao")
+        {
+
+            Vector3 posicaoBroto = new Vector3(posicaoBatata.position.x, posicaoBatata.position.y, posicaoBatata.position.z);
+            Instantiate(mudaBatata, posicaoBroto, Quaternion.identity);
+        }
     }
 }
